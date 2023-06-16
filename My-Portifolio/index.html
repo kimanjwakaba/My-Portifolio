@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <title>My Portifolio website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<div class="header">
+<div class="container">
+    <nav>
+        <img src="images/logo.png" class="logo">
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </nav>
+    <div class="header-text">
+        <p>UI/UX Designer</p>
+        <h1>Hi, I'm <span>Kelvin</span><br> Kimani from Kenya</h1>
+    </div>
+</div>
+</div>
+<!--------about-------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm Kelvin a Fullstack developer goood in programming languages like python,HTML,CSS and Javascript. 
+                    i am good in programming stacks like node.js, React and Django frameworks.
+                    i have worked with varoius companies like the IsaRos designers, Premiernets broadband and fibrecom solutions.
+                    i am a graduate from Karatina University with a bachelors degree in "Computer Science" in specialization in software developement.
+
+                </p>
+                <div class="tabs-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('Education')">Education</p>
+                    <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Developing Android applications</li>
+                    </ul>
+                </div>
+                <div class="tab-contents"id="Education">
+                    <ul>
+                        <li><span>karatina university</span><br>BSC. Computer Science</li>
+                        <li><span>Allison</span><br>Cyber Security</li>
+                        <li><span>THE Jitu</span><br>Quality Assurance</li>
+                    </ul>
+                </div><div class="tab-contents"id="Experience">
+                    <ul>
+                        <li><span>Fibrecom Solutions</span><br>Networking</li>
+                        <li><span>IsaRos designer</span><br>web development</li>
+                        <li><span>The Jitu</span><br>QA</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+var tablinks = documents.getElementsByClassName("tab-links");
+
+var tabcontents = documents.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+}
+</script>
+    </body>
+    </html>
